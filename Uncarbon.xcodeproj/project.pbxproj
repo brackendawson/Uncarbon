@@ -11,9 +11,32 @@
 		C2295B5128C794B400942ACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2295B5028C794B400942ACD /* ViewController.swift */; };
 		C2295B5328C794B500942ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2295B5228C794B500942ACD /* Assets.xcassets */; };
 		C2295B6028C79A6B00942ACD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2295B5F28C79A6B00942ACD /* main.swift */; };
+		C2D1058028C8DDC9005BCE4A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D1057F28C8DDC9005BCE4A /* main.swift */; };
+		C2D1058528C8E019005BCE4A /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D1058428C8E019005BCE4A /* HelperProtocol.swift */; };
+		C2D1058628C8E019005BCE4A /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D1058428C8E019005BCE4A /* HelperProtocol.swift */; };
+		C2D1058828C8E2C7005BCE4A /* RemoteApplicationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D1058728C8E2C7005BCE4A /* RemoteApplicationProtocol.swift */; };
+		C2D1058928C8E2C7005BCE4A /* RemoteApplicationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D1058728C8E2C7005BCE4A /* RemoteApplicationProtocol.swift */; };
+		C2D1058B28C8E55A005BCE4A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D1058A28C8E55A005BCE4A /* Helper.swift */; };
+		C2D1058F28CA10CD005BCE4A /* HelperRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D1058E28CA10CD005BCE4A /* HelperRemote.swift */; };
+		C2F9BEE728D219FB007E9852 /* UncarbonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F9BEE628D219FB007E9852 /* UncarbonError.swift */; };
+		C2F9BEEF28D22748007E9852 /* cc.bracken.Uncarbon.Helper in CopyFiles */ = {isa = PBXBuildFile; fileRef = C2D1057D28C8DDC9005BCE4A /* cc.bracken.Uncarbon.Helper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C2D1057B28C8DDC9005BCE4A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = Uncarbon.app/Contents/Library/LaunchServices;
+			dstSubfolderSpec = 16;
+			files = (
+				C2F9BEEF28D22748007E9852 /* cc.bracken.Uncarbon.Helper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C220743D28D3687D009BA9F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C2295B4B28C794B400942ACD /* Uncarbon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uncarbon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2295B4E28C794B400942ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2295B5028C794B400942ACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,10 +44,26 @@
 		C2295B5728C794B500942ACD /* Uncarbon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Uncarbon.entitlements; sourceTree = "<group>"; };
 		C2295B5F28C79A6B00942ACD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C2295B6128C79D5F00942ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C2D1057D28C8DDC9005BCE4A /* cc.bracken.Uncarbon.Helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cc.bracken.Uncarbon.Helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D1057F28C8DDC9005BCE4A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C2D1058428C8E019005BCE4A /* HelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		C2D1058728C8E2C7005BCE4A /* RemoteApplicationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteApplicationProtocol.swift; sourceTree = "<group>"; };
+		C2D1058A28C8E55A005BCE4A /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		C2D1058E28CA10CD005BCE4A /* HelperRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperRemote.swift; sourceTree = "<group>"; };
+		C2F9BEE628D219FB007E9852 /* UncarbonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UncarbonError.swift; sourceTree = "<group>"; };
+		C2F9BEED28D224EC007E9852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2F9BEEE28D2256A007E9852 /* Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Launchd.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C2295B4828C794B400942ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D1057A28C8DDC9005BCE4A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,7 +76,9 @@
 		C2295B4228C794B400942ACD = {
 			isa = PBXGroup;
 			children = (
+				C220743D28D3687D009BA9F5 /* README.md */,
 				C2295B4D28C794B400942ACD /* Uncarbon */,
+				C2D1057E28C8DDC9005BCE4A /* Helper */,
 				C2295B4C28C794B400942ACD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				C2295B4B28C794B400942ACD /* Uncarbon.app */,
+				C2D1057D28C8DDC9005BCE4A /* cc.bracken.Uncarbon.Helper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,8 +101,23 @@
 				C2295B5028C794B400942ACD /* ViewController.swift */,
 				C2295B5228C794B500942ACD /* Assets.xcassets */,
 				C2295B5728C794B500942ACD /* Uncarbon.entitlements */,
+				C2D1058E28CA10CD005BCE4A /* HelperRemote.swift */,
+				C2F9BEE628D219FB007E9852 /* UncarbonError.swift */,
 			);
 			path = Uncarbon;
+			sourceTree = "<group>";
+		};
+		C2D1057E28C8DDC9005BCE4A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1057F28C8DDC9005BCE4A /* main.swift */,
+				C2D1058428C8E019005BCE4A /* HelperProtocol.swift */,
+				C2D1058728C8E2C7005BCE4A /* RemoteApplicationProtocol.swift */,
+				C2D1058A28C8E55A005BCE4A /* Helper.swift */,
+				C2F9BEED28D224EC007E9852 /* Info.plist */,
+				C2F9BEEE28D2256A007E9852 /* Launchd.plist */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +140,23 @@
 			productReference = C2295B4B28C794B400942ACD /* Uncarbon.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C2D1057C28C8DDC9005BCE4A /* cc.bracken.Uncarbon.Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D1058128C8DDC9005BCE4A /* Build configuration list for PBXNativeTarget "cc.bracken.Uncarbon.Helper" */;
+			buildPhases = (
+				C2D1057928C8DDC9005BCE4A /* Sources */,
+				C2D1057A28C8DDC9005BCE4A /* Frameworks */,
+				C2D1057B28C8DDC9005BCE4A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cc.bracken.Uncarbon.Helper;
+			productName = Helper;
+			productReference = C2D1057D28C8DDC9005BCE4A /* cc.bracken.Uncarbon.Helper */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +168,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					C2295B4A28C794B400942ACD = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C2D1057C28C8DDC9005BCE4A = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -112,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				C2295B4A28C794B400942ACD /* Uncarbon */,
+				C2D1057C28C8DDC9005BCE4A /* cc.bracken.Uncarbon.Helper */,
 			);
 		};
 /* End PBXProject section */
@@ -133,8 +211,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2295B5128C794B400942ACD /* ViewController.swift in Sources */,
+				C2D1058528C8E019005BCE4A /* HelperProtocol.swift in Sources */,
+				C2D1058828C8E2C7005BCE4A /* RemoteApplicationProtocol.swift in Sources */,
 				C2295B4F28C794B400942ACD /* AppDelegate.swift in Sources */,
 				C2295B6028C79A6B00942ACD /* main.swift in Sources */,
+				C2D1058F28CA10CD005BCE4A /* HelperRemote.swift in Sources */,
+				C2F9BEE728D219FB007E9852 /* UncarbonError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D1057928C8DDC9005BCE4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D1058028C8DDC9005BCE4A /* main.swift in Sources */,
+				C2D1058628C8E019005BCE4A /* HelperProtocol.swift in Sources */,
+				C2D1058928C8E2C7005BCE4A /* RemoteApplicationProtocol.swift in Sources */,
+				C2D1058B28C8E55A005BCE4A /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,11 +353,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Uncarbon/Uncarbon.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PN48TU45B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Uncarbon/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -285,11 +381,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Uncarbon/Uncarbon.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PN48TU45B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Uncarbon/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,6 +399,48 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cc.bracken.Uncarbon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C2D1058228C8DDC9005BCE4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2PN48TU45B;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/Helper/Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/Helper/Launchd.plist\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.bracken.Uncarbon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C2D1058328C8DDC9005BCE4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2PN48TU45B;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/Helper/Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/Helper/Launchd.plist\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.bracken.Uncarbon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -321,6 +462,15 @@
 			buildConfigurations = (
 				C2295B5B28C794B500942ACD /* Debug */,
 				C2295B5C28C794B500942ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D1058128C8DDC9005BCE4A /* Build configuration list for PBXNativeTarget "cc.bracken.Uncarbon.Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D1058228C8DDC9005BCE4A /* Debug */,
+				C2D1058328C8DDC9005BCE4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

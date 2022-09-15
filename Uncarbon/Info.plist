@@ -4,5 +4,10 @@
 <dict>
 	<key>LSUIElement</key>
 	<true/>
+	<key>SMPrivilegedExecutables</key>
+	<dict>
+		<key>cc.bracken.Uncarbon.Helper</key>
+		<string>identifier &quot;cc.bracken.Uncarbon.Helper&quot; and anchor apple generic and certificate leaf[subject.CN] = &quot;Apple Development: abdawson@gmail.com (P72PGC8579)&quot; and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+	</dict>
 </dict>
 </plist>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>cc.bracken.Uncarbon.helper</string>
+	<key>StandardOutputPath</key>
+	<string>/tmp/uncarbon.helper.log</string>
+	<key>MachServices</key>
+	<dict>
+		<key>cc.bracken.Uncarbon.Helper</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

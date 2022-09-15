@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(status)
         menu.addItem(NSMenuItem.separator())
         
-        let cont = NSMenuItem(title: "Disable for today", action: #selector(toggleEnabled), keyEquivalent: "d")
+        let cont = NSMenuItem(title: "Disable until tomorrow", action: #selector(toggleEnabled), keyEquivalent: "")
         menu.addItem(cont)
         
         let pref = NSMenuItem(title: "Preferences...", action: #selector(showPrefs), keyEquivalent: ",")
@@ -35,8 +35,26 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.menu = menu
     }
     
-    @objc func showPrefs() {
+    @objc func showPrefs() { // don't throws here after getting rid of remote creation
         print("would show prefs")
+
+        // TODO don't install the helper here
+        
+        // TODO probably in constructor
+                
+        let remote: HelperProtocol?
+        do {
+            remote = try HelperRemote().getRemote()
+        } catch {
+            print("TODO: \(error)")
+            return
+        }
+
+        print("got remote")
+
+        remote?.setMode(mode: Mode.save) { (mode, err) in print(mode == Mode.save, err?.localizedDescription ?? "success") } // TODO send the error somewhere
+        
+        print("did thing")
     }
 
     @objc func toggleEnabled() {
